@@ -7,6 +7,7 @@ import "./App.css"
 
 class Home extends React.Component {
   state = {
+    image : '',
     cbow : 0,
     lstm : 0,
     cnn_lstm : 0,
@@ -38,6 +39,7 @@ class Home extends React.Component {
   }
 
   render() {
+    var base64img = "data:image/png;base64," + this.state.image
     //const [startDate, setStartDate] = useState(new Date());
     const handleGetResult = () => {
       
@@ -46,6 +48,7 @@ class Home extends React.Component {
         this.setState({cbow : result.cbow})
         this.setState({lstm : result.lstm})
         this.setState({cnn_lstm : result.cnn_lstm})
+        this.setState({image : result.image})
         console.log(result);
       });
       };
@@ -117,6 +120,9 @@ class Home extends React.Component {
       ]
     }} options={{ responsive: true }} />
       </MDBContainer>
+      <div>
+      <img src={base64img}/>
+      </div>
       </div>
     );
   }
