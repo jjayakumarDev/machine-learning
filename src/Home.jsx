@@ -58,7 +58,7 @@ class Home extends React.Component {
       <div>
         <div class="container">
           <div class="row">
-            <h1>SentimentsAnalysis Using Hybrid CNN-LSTM Model</h1>
+            <h1>Sentiments Analysis Using Hybrid CNN-LSTM Model</h1>
           <div class="container">
             <div class="row">
               <div class="col-sm">
