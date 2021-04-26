@@ -1,7 +1,7 @@
 import axios from "axios";
 
 //REST API End points
-const GET_API_URL = "https://d6aa18d6b372.ngrok.io";
+const GET_API_URL = "https://562355c93d6d.ngrok.io";
 
 class Services {
     getData() {
